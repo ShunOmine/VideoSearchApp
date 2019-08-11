@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1C1E0B22FFA2B30086C164 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A33861C22FFA02600DA18C3 /* ViewController.swift */,
+				2A33861E22FFA02600DA18C3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A1C1E0C22FFA2BE0086C164 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2A1C1E0D22FFA2CB0086C164 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2A33860E22FFA02600DA18C3 = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +84,10 @@
 		2A33861922FFA02600DA18C3 /* VideoSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				2A1C1E0D22FFA2CB0086C164 /* Models */,
+				2A1C1E0C22FFA2BE0086C164 /* ViewModels */,
+				2A1C1E0B22FFA2B30086C164 /* Views */,
 				2A33861A22FFA02600DA18C3 /* AppDelegate.swift */,
-				2A33861C22FFA02600DA18C3 /* ViewController.swift */,
-				2A33861E22FFA02600DA18C3 /* Main.storyboard */,
 				2A33862122FFA02700DA18C3 /* Assets.xcassets */,
 				2A33862322FFA02700DA18C3 /* LaunchScreen.storyboard */,
 				2A33862622FFA02700DA18C3 /* Info.plist */,
@@ -77,7 +101,6 @@
 				08882C1C6F67ACC1A4937635 /* Pods-VideoSearchApp.debug.xcconfig */,
 				65502B5B073B7C4A57B8EFD5 /* Pods-VideoSearchApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
