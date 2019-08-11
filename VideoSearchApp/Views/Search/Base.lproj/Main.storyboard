@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dp0-Cq-mA9">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoSearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="検索キーワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRI-v9-KDl">
-                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <rect key="frame" x="10" y="98" width="355" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="fUq-jd-X4j"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m0H-H5-hLp">
-                                <rect key="frame" x="10" y="129" width="394" height="30"/>
+                                <rect key="frame" x="10" y="129" width="355" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xid-8s-42F"/>
                                 </constraints>
@@ -68,36 +68,48 @@
             <objects>
                 <tableViewController storyboardIdentifier="VideoListTableViewController" id="j6M-md-f2i" customClass="VideoListTableViewController" customModule="VideoSearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vLj-DD-NVc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoListTableViewCell" rowHeight="296" id="LR4-dL-Rk2" userLabel="VideoListTableViewCell" customClass="VideoListTableViewCell" customModule="VideoSearchApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="296"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoListTableViewCell" rowHeight="255" id="LR4-dL-Rk2" userLabel="VideoListTableViewCell" customClass="VideoListTableViewCell" customModule="VideoSearchApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="255"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LR4-dL-Rk2" id="uGJ-ZY-I7y">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="295.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="254.66666666666666"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="動画タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-VK-lL6">
-                                            <rect key="frame" x="38" y="11" width="104" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="動画タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-VK-lL6">
+                                            <rect key="frame" x="16" y="10.999999999999998" width="343" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khE-Jj-Or7">
-                                            <rect key="frame" x="38" y="40" width="339" height="193"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="再生回数: 000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhZ-5o-x1o">
+                                            <rect key="frame" x="0.0" y="231.33333333333334" width="375" height="23.333333333333343"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khE-Jj-Or7">
+                                            <rect key="frame" x="87.666666666666686" y="31.333333333333343" width="200" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="BZ9-r3-Lu9"/>
+                                                <constraint firstAttribute="height" constant="200" id="RHB-vg-71y"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="再生回数: 000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhZ-5o-x1o">
-                                            <rect key="frame" x="38" y="241" width="110" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8tJ-VK-lL6" firstAttribute="top" secondItem="uGJ-ZY-I7y" secondAttribute="topMargin" id="2eh-Cg-cXI"/>
+                                        <constraint firstItem="8tJ-VK-lL6" firstAttribute="leading" secondItem="uGJ-ZY-I7y" secondAttribute="leadingMargin" id="427-a5-9nl"/>
+                                        <constraint firstItem="khE-Jj-Or7" firstAttribute="top" secondItem="8tJ-VK-lL6" secondAttribute="bottom" id="AAD-52-prG"/>
+                                        <constraint firstAttribute="trailing" secondItem="nhZ-5o-x1o" secondAttribute="trailing" id="GE3-j0-ifb"/>
+                                        <constraint firstItem="nhZ-5o-x1o" firstAttribute="leading" secondItem="uGJ-ZY-I7y" secondAttribute="leading" id="OJO-ZQ-tdY"/>
+                                        <constraint firstItem="nhZ-5o-x1o" firstAttribute="top" secondItem="khE-Jj-Or7" secondAttribute="bottom" id="SU3-l2-ewv"/>
+                                        <constraint firstItem="khE-Jj-Or7" firstAttribute="centerX" secondItem="uGJ-ZY-I7y" secondAttribute="centerX" id="Xp6-u7-DwM"/>
+                                        <constraint firstAttribute="bottom" secondItem="nhZ-5o-x1o" secondAttribute="bottom" id="ei0-yB-nMR"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="8tJ-VK-lL6" secondAttribute="trailing" id="tGH-vL-aaH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="countLabel" destination="nhZ-5o-x1o" id="uOD-hF-Ssc"/>
@@ -115,14 +127,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KY0-UR-aDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97.101449275362327" y="120.53571428571428"/>
+            <point key="canvasLocation" x="-98.400000000000006" y="120.44334975369459"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QFu-wK-DH9">
             <objects>
                 <navigationController id="dp0-Cq-mA9" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mg7-d1-Tbr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
