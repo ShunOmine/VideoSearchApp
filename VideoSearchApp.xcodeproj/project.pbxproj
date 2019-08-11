@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1C1E1122FFA6790086C164 /* VideoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1C1E1022FFA6790086C164 /* VideoListTableViewController.swift */; };
+		2A1C1E1322FFA68E0086C164 /* VideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1C1E1222FFA68E0086C164 /* VideoListTableViewCell.swift */; };
+		2A1C1E1522FFAC250086C164 /* VideoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1C1E1422FFAC250086C164 /* VideoListModel.swift */; };
+		2A1C1E1722FFB1690086C164 /* VideoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1C1E1622FFB1690086C164 /* VideoListViewModel.swift */; };
 		2A33861B22FFA02600DA18C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33861A22FFA02600DA18C3 /* AppDelegate.swift */; };
 		2A33861D22FFA02600DA18C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33861C22FFA02600DA18C3 /* ViewController.swift */; };
 		2A33862022FFA02600DA18C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33861E22FFA02600DA18C3 /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		08882C1C6F67ACC1A4937635 /* Pods-VideoSearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoSearchApp.debug.xcconfig"; path = "Target Support Files/Pods-VideoSearchApp/Pods-VideoSearchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2A1C1E1022FFA6790086C164 /* VideoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewController.swift; sourceTree = "<group>"; };
+		2A1C1E1222FFA68E0086C164 /* VideoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListTableViewCell.swift; sourceTree = "<group>"; };
+		2A1C1E1422FFAC250086C164 /* VideoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListModel.swift; sourceTree = "<group>"; };
+		2A1C1E1622FFB1690086C164 /* VideoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewModel.swift; sourceTree = "<group>"; };
 		2A33861722FFA02600DA18C3 /* VideoSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A33861A22FFA02600DA18C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A33861C22FFA02600DA18C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,8 +51,8 @@
 		2A1C1E0B22FFA2B30086C164 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2A33861C22FFA02600DA18C3 /* ViewController.swift */,
-				2A33861E22FFA02600DA18C3 /* Main.storyboard */,
+				2A1C1E0E22FFA60D0086C164 /* Search */,
+				2A1C1E0F22FFA62F0086C164 /* VideoList */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -52,6 +60,7 @@
 		2A1C1E0C22FFA2BE0086C164 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2A1C1E1622FFB1690086C164 /* VideoListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -59,8 +68,27 @@
 		2A1C1E0D22FFA2CB0086C164 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2A1C1E1422FFAC250086C164 /* VideoListModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2A1C1E0E22FFA60D0086C164 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2A33861C22FFA02600DA18C3 /* ViewController.swift */,
+				2A33861E22FFA02600DA18C3 /* Main.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2A1C1E0F22FFA62F0086C164 /* VideoList */ = {
+			isa = PBXGroup;
+			children = (
+				2A1C1E1022FFA6790086C164 /* VideoListTableViewController.swift */,
+				2A1C1E1222FFA68E0086C164 /* VideoListTableViewCell.swift */,
+			);
+			path = VideoList;
 			sourceTree = "<group>";
 		};
 		2A33860E22FFA02600DA18C3 = {
@@ -84,8 +112,8 @@
 		2A33861922FFA02600DA18C3 /* VideoSearchApp */ = {
 			isa = PBXGroup;
 			children = (
-				2A1C1E0D22FFA2CB0086C164 /* Models */,
 				2A1C1E0C22FFA2BE0086C164 /* ViewModels */,
+				2A1C1E0D22FFA2CB0086C164 /* Models */,
 				2A1C1E0B22FFA2B30086C164 /* Views */,
 				2A33861A22FFA02600DA18C3 /* AppDelegate.swift */,
 				2A33862122FFA02700DA18C3 /* Assets.xcassets */,
@@ -228,6 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A33861D22FFA02600DA18C3 /* ViewController.swift in Sources */,
+				2A1C1E1322FFA68E0086C164 /* VideoListTableViewCell.swift in Sources */,
+				2A1C1E1722FFB1690086C164 /* VideoListViewModel.swift in Sources */,
+				2A1C1E1122FFA6790086C164 /* VideoListTableViewController.swift in Sources */,
+				2A1C1E1522FFAC250086C164 /* VideoListModel.swift in Sources */,
 				2A33861B22FFA02600DA18C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
